@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import {ViewModel} from "./ViewModel";
 
-const viewModel = new ViewModel();
-export const render = () => ReactDOM.render(<App viewModel={viewModel}/>, document.getElementById('root'));
+let viewModel = null;
+export const render = () =>
+  ReactDOM.render(<App viewModel={viewModel}/>, document.getElementById('root'));
+viewModel = new ViewModel(render);
 render();
 

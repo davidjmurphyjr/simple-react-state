@@ -1,12 +1,11 @@
-import {render} from "./index"
-
 export class ViewModel {
-  constructor() {
+  constructor(render) {
     this.value = "foo";
+    this.render = render;
   }
 
-  updateValue = (event) => {
-    this.value = event.target.value;
-    render();
+  updateValue = (value) => {
+    this.value = value;
+    this.render();
   }
 }
