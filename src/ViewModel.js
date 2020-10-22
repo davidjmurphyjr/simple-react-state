@@ -1,11 +1,9 @@
 export class ViewModel {
-  constructor(render) {
+  constructor() {
     this.value = "foo";
-    this.render = render;
   }
 
   updateValue = (value) => {
     this.value = value;
-    this.render();
   }
 }
