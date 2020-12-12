@@ -6,6 +6,6 @@ import {ViewModel} from "./ViewModel";
 
 let viewModel = null;
 export const render = () => ReactDOM.render(<App viewModel={viewModel}/>, document.getElementById('root'));
-viewModel = new ViewModel(render);
+viewModel = new ViewModel();
 render();
 

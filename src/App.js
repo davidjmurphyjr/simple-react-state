@@ -9,7 +9,7 @@ function App({viewModel}) {
       <div>
         <input
           value={viewModel.value}
-          onChange={ action(e => viewModel.updateValue(e.target.value))}
+          onChange={action(e => viewModel.updateValue(e.target.value))}
         />
       </div>
     </div>
